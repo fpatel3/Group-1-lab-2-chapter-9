@@ -35,7 +35,7 @@ function empty()
   z =  document.getElementById("year").value;
   if (x == "" || y == "" || z == "") 
    { 
-       if(X == "")
+       if(x == "")
        {
            console.log(x);
             alert("Enter a Valid title");
@@ -45,7 +45,7 @@ function empty()
     //         });
             return false;
        }
-       else if(y == null)
+       else if(y == "")
        {
         console.log(y);
 
@@ -53,7 +53,7 @@ function empty()
     //   submit.addEventListener("click", function(event){
     //     event.preventDefault();
      // });
-      
+      return false;
        }
       else if(z == "")
       {
@@ -61,17 +61,14 @@ function empty()
     //  submit.addEventListener("click", function(event){
     //     event.preventDefault();
     //   });
+    return false;
       }
-      else 
-      {
-          alert("You are missing multiple required fields..!")
-        //   submit.addEventListener("click", function(event){
-        //     event.preventDefault();
-        //   });
-      }
+      
        
    }
+   // code done by foram..
 }
+
 
 
 
@@ -90,6 +87,7 @@ function removeClass(selector, myClass) {
   removeClass('.class-selector', 'example-class');
   removeClass('#id-selector', 'example-class');
   // end of #4
+  // code done by sharmin
 
    
 
